@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="artboard phone-5">
+            <div class="flex justify-between items-center mx-6 mt-2 py-3">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <svg class="w-10 h-10" viewBox="0 0 50.5607 48" fill="rgb(8, 116, 242)"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient x1="28.298836" y1="61.136551" x2="25.605621" y2="19.240181"
+                                    id="paint_linear_11_2925_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0874F2" />
+                                    <stop offset="1.000000" stop-color="#0874F2" stop-opacity="0.000000" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M0 28.36L13.65 48L50.56 0L13.65 35.45L0 28.36Z" fill="rgb(8, 116, 242)"
+                                fill-opacity="1.000000" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-xl">$<span id="current-money">45000</span></h2>
+                        <p>Available Balance</p>
+                    </div>
+                </div>
+                <button id="log-out" class="btn">
+                    <svg class="w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <defs>
+                            <clipPath id="clip11_2930">
+                                <rect id="Frame" rx="-0.500000" width="19.000000" height="19.000000"
+                                    transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                            </clipPath>
+                        </defs>
+                        <rect id="Frame" rx="-0.500000" width="19.000000" height="19.000000"
+                            transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                        <g clip-path="url(#clip11_2930)">
+                            <path
+                                d="M8.33 6.66L8.33 5C8.33 4.55 8.5 4.13 8.82 3.82C9.13 3.5 9.55 3.33 10 3.33L15.83 3.33C16.27 3.33 16.69 3.5 17.01 3.82C17.32 4.13 17.5 4.55 17.5 5L17.5 15C17.5 15.44 17.32 15.86 17.01 16.17C16.69 16.49 16.27 16.66 15.83 16.66L10 16.66C9.55 16.66 9.13 16.49 8.82 16.17C8.5 15.86 8.33 15.44 8.33 15L8.33 13.33"
+                                stroke="#666768" stroke-opacity="1.000000" stroke-width="1.500000"
+                                stroke-linejoin="round" stroke-linecap="round" />
+                            <path id="Vector" d="M12.5 10L2.5 10L5 7.5" stroke="#666768" stroke-opacity="1.000000"
+                                stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+                            <path id="Vector" d="M5 12.5L2.5 10" stroke="#666768" stroke-opacity="1.000000"
+                                stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+                        </g>
+                    </svg>
+                    Log Out
+                </button>
+            </div>
+
+            <div class="space-y-4 mx-6 mt-5">
+                <div class="space-y-2">
+                    <h2 class="font-bold text-2xl">🔥Welcome to Payooo!</h2>
+                    <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div id="add-money"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5 px-3">
+
+                        Add Money
+                    </div>
+                    <div id="cash-out"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5 px-3">
+
+                        Cash Out
+                    </div>
+                    <div id="transfer-money"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5">
+                        <svg class="w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <clipPath id="clip11_2745">
+                                <rect id="money 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                    transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                            </clipPath>
+                            </defs>
+                            <rect id="money 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip11_2745)">
+                                <path
+                                    d="M24 19.23L16.4 14.45L16.4 16.52L12 16.52L11.49 19.04L12 21.94L16.4 21.94L16.4 24.02L24 19.23Z"
+                                    fill="#0BD5DD" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M10.37 16.52L5.83 12.11L5.83 17.23C5.83 19.83 7.95 21.94 10.55 21.94L12 21.94L12 16.52L10.37 16.52Z"
+                                    fill="#00E5EE" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M13.44 2.12L12 2.12L10.99 4.52L12 7.54L13.62 7.54L18.16 11.95L18.16 6.83C18.16 4.23 16.04 2.12 13.44 2.12Z"
+                                    fill="#0DD141" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path d="M7.59 2.12L7.59 0.04L0 4.83L7.59 9.61L7.59 7.54L12 7.54L12 2.12L7.59 2.12Z"
+                                    fill="#52E161" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M12 5.88L11.49 12.18L12 18.18C15.39 18.18 18.15 15.43 18.15 12.03C18.15 8.63 15.39 5.88 12 5.88Z"
+                                    fill="#FC7419" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M5.84 12.03C5.84 15.43 8.6 18.18 12 18.18L12 5.88C8.6 5.88 5.84 8.63 5.84 12.03Z"
+                                    fill="#FDA102" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M12 5.17L11.49 5.67L12 6.58C15 6.58 17.45 9.02 17.45 12.03C17.45 15.04 15 17.48 12 17.48L11.49 18.18L12 18.89C15.78 18.89 18.85 15.81 18.85 12.03C18.85 8.25 15.78 5.17 12 5.17Z"
+                                    fill="#FDAE02" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M6.54 12.03C6.54 9.02 8.99 6.58 12 6.58L12 5.17C8.21 5.17 5.14 8.25 5.14 12.03C5.14 15.81 8.21 18.89 12 18.89L12 17.48C8.99 17.48 6.54 15.04 6.54 12.03Z"
+                                    fill="#FDCB02" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M12.15 10.6C12.61 10.6 13.11 10.73 13.65 11L14.19 9.68C13.75 9.44 13.2 9.29 12.63 9.24L12.63 8.41L12 8.41L11.49 10.18L12 10.6C12.04 10.6 12.09 10.6 12.15 10.6Z"
+                                    fill="#FDD535" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M12 11.28L11.49 12.18L12 12.79C12.37 12.87 12.63 12.97 12.63 13.17C12.63 13.35 12.46 13.45 12 13.46L11.49 14.18L12 15.65L12.63 15.65L12.63 14.79C13.82 14.58 14.42 13.86 14.42 13.03C14.42 11.59 12.86 11.48 12 11.28Z"
+                                    fill="#FDD535" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M11.93 13.46C11.34 13.46 10.66 13.27 10.15 12.97L9.57 14.29C10.03 14.58 10.78 14.78 11.54 14.83L11.54 15.65L12 15.65L12 13.46C11.97 13.46 11.95 13.46 11.93 13.46Z"
+                                    fill="#FEEA9A" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M11.54 9.25C10.28 9.43 9.65 10.16 9.65 11.03C9.65 12.44 11.12 12.59 12 12.79L12 11.28C11.67 11.2 11.44 11.11 11.44 10.94C11.44 10.77 11.58 10.63 12 10.6L12 8.41L11.54 8.41L11.54 9.25Z"
+                                    fill="#FEEA9A" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </g>
+                        </svg>
+                        Transfer Money
+                    </div>
+                    <div id="get-bonus"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5 px-3">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip11_2763">
+                                    <rect id="financial 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                        transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="financial 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip11_2763)">
+                                <path
+                                    d="M21.81 21.15L6.79 21.15C6.51 21.15 6.28 20.92 6.28 20.64L6.28 13.55C6.28 13.27 6.51 13.04 6.79 13.04L21.81 13.04C22.09 13.04 22.32 13.27 22.32 13.55L22.32 20.64C22.32 20.92 22.09 21.15 21.81 21.15Z"
+                                    fill="#5A7A39" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M20.95 20.29L5.94 20.29C5.65 20.29 5.42 20.06 5.42 19.78L5.42 12.7C5.42 12.41 5.65 12.18 5.94 12.18L20.95 12.18C21.23 12.18 21.46 12.41 21.46 12.7L21.46 19.78C21.46 20.06 21.23 20.29 20.95 20.29Z"
+                                    fill="#648940" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M20.09 19.44L5.08 19.44C4.8 19.44 4.57 19.21 4.57 18.92L4.57 11.84C4.57 11.56 4.8 11.33 5.08 11.33L20.09 11.33C20.38 11.33 20.61 11.56 20.61 11.84L20.61 18.92C20.61 19.21 20.38 19.44 20.09 19.44Z"
+                                    fill="#76A34F" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M19.9 16.68L19.9 14.08C19.9 14 19.84 13.92 19.75 13.91C18.85 13.84 18.13 13.1 18.06 12.18C18.05 12.1 17.98 12.03 17.89 12.03L7.29 12.03C7.2 12.03 7.12 12.1 7.11 12.18C7.04 13.1 6.33 13.84 5.43 13.91C5.34 13.92 5.27 14 5.27 14.08L5.27 16.68C5.27 16.77 5.34 16.84 5.43 16.85C6.33 16.93 7.04 17.66 7.11 18.58C7.12 18.67 7.2 18.74 7.29 18.74L17.89 18.74C17.98 18.74 18.05 18.67 18.06 18.58C18.13 17.66 18.85 16.93 19.75 16.85C19.84 16.84 19.9 16.77 19.9 16.68Z"
+                                    fill="#91B56B" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M15.23 15.38C15.23 16.84 14.05 18.03 12.59 18.03C11.13 18.03 9.94 16.84 9.94 15.38C9.94 13.92 11.13 12.74 12.59 12.74C14.05 12.74 15.23 13.92 15.23 15.38Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M12.85 17.01L12.33 17.01C11.86 17.01 11.48 16.63 11.48 16.17C11.48 16.06 11.57 15.98 11.67 15.98C11.77 15.98 11.86 16.06 11.86 16.17C11.86 16.43 12.07 16.64 12.33 16.64L12.85 16.64C13.11 16.64 13.32 16.43 13.32 16.17L13.32 15.91C13.32 15.65 13.11 15.44 12.85 15.44L12.33 15.44C11.86 15.44 11.48 15.06 11.48 14.6C11.48 14.13 11.86 13.75 12.33 13.75L12.85 13.75C13.31 13.75 13.69 14.13 13.69 14.6C13.69 14.7 13.61 14.78 13.5 14.78C13.4 14.78 13.32 14.7 13.32 14.6C13.32 14.34 13.11 14.13 12.85 14.13L12.33 14.13C12.07 14.13 11.86 14.34 11.86 14.6C11.86 14.85 12.07 15.06 12.33 15.06L12.85 15.06C13.31 15.06 13.69 15.44 13.69 15.91L13.69 16.17C13.69 16.63 13.31 17.01 12.85 17.01Z"
+                                    fill="#648940" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M12.59 17.27C12.48 17.27 12.4 17.19 12.4 17.08L12.4 13.68C12.4 13.58 12.48 13.49 12.59 13.49C12.69 13.49 12.78 13.58 12.78 13.68L12.78 17.08C12.78 17.19 12.69 17.27 12.59 17.27Z"
+                                    fill="#648940" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M10.88 9.52C10.88 12.06 8.82 14.12 6.27 14.12C3.73 14.12 1.67 12.06 1.67 9.52C1.67 6.97 3.73 4.91 6.27 4.91C8.82 4.91 10.88 6.97 10.88 9.52Z"
+                                    fill="#FFA91A" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M2.35 9.7C2.25 9.7 2.17 9.62 2.17 9.52C2.17 9.41 2.25 9.33 2.35 9.33C2.46 9.33 2.54 9.41 2.54 9.52C2.54 9.62 2.46 9.7 2.35 9.7ZM2.43 8.96C2.41 8.96 2.4 8.96 2.39 8.96C2.34 8.95 2.3 8.92 2.27 8.88C2.24 8.84 2.23 8.79 2.24 8.74C2.43 7.77 2.97 6.89 3.75 6.28C3.96 6.12 4.18 5.98 4.41 5.86C4.5 5.81 4.62 5.85 4.66 5.94C4.69 5.98 4.69 6.03 4.67 6.08C4.66 6.13 4.63 6.17 4.58 6.19C4.37 6.3 4.17 6.43 3.98 6.57C3.27 7.13 2.78 7.92 2.61 8.81L2.61 8.81C2.59 8.9 2.52 8.96 2.43 8.96Z"
+                                    fill="#FFC91D" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M8.91 5.74C9.43 6.49 9.74 7.39 9.74 8.37C9.74 10.92 7.67 12.98 5.13 12.98C4.15 12.98 3.24 12.67 2.5 12.15C3.33 13.34 4.71 14.12 6.27 14.12C8.82 14.12 10.88 12.06 10.88 9.52C10.88 7.95 10.1 6.57 8.91 5.74Z"
+                                    fill="#F79219" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M9.23 5.99C9.9 6.79 10.31 7.82 10.31 8.95C10.31 11.49 8.25 13.55 5.7 13.55C4.58 13.55 3.55 13.15 2.75 12.47C3.59 13.48 4.86 14.12 6.27 14.12C8.82 14.12 10.88 12.06 10.88 9.52C10.88 8.1 10.24 6.83 9.23 5.99Z"
+                                    fill="#EF7816" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M6.69 12.12L5.85 12.12C5.17 12.12 4.62 11.56 4.62 10.88C4.62 10.78 4.7 10.7 4.81 10.7C4.91 10.7 4.99 10.78 4.99 10.88C4.99 11.36 5.38 11.74 5.85 11.74L6.69 11.74C7.17 11.74 7.55 11.36 7.55 10.88L7.55 10.46C7.55 9.99 7.17 9.6 6.69 9.6L5.85 9.6C5.17 9.6 4.62 9.05 4.62 8.37C4.62 7.69 5.17 7.13 5.85 7.13L6.69 7.13C7.37 7.13 7.93 7.69 7.93 8.37C7.93 8.47 7.84 8.56 7.74 8.56C7.64 8.56 7.55 8.47 7.55 8.37C7.55 7.89 7.17 7.51 6.69 7.51L5.85 7.51C5.38 7.51 4.99 7.89 4.99 8.37C4.99 8.84 5.38 9.23 5.85 9.23L6.69 9.23C7.37 9.23 7.93 9.78 7.93 10.46L7.93 10.88C7.93 11.56 7.37 12.12 6.69 12.12Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M6.27 12.54C6.17 12.54 6.09 12.45 6.09 12.35L6.09 6.9C6.09 6.8 6.17 6.71 6.27 6.71C6.38 6.71 6.46 6.8 6.46 6.9L6.46 12.35C6.46 12.45 6.38 12.54 6.27 12.54Z"
+                                    fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M19.63 6.45C19.63 8.45 18.01 10.07 16.02 10.07C14.02 10.07 12.4 8.45 12.4 6.45C12.4 4.46 14.02 2.84 16.02 2.84C18.01 2.84 19.63 4.46 19.63 6.45Z"
+                                    fill="#76A34F" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M18.57 3.9C18.46 3.79 18.35 3.69 18.23 3.6C19.33 5.01 19.23 7.06 17.93 8.36C16.62 9.66 14.58 9.76 13.16 8.66C13.25 8.78 13.35 8.9 13.46 9.01C14.87 10.42 17.16 10.42 18.57 9.01C19.98 7.6 19.98 5.31 18.57 3.9Z"
+                                    fill="#648940" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M15.63 8.37C15.46 8.37 15.3 8.31 15.18 8.18L13.93 6.94C13.68 6.69 13.68 6.29 13.93 6.04C14.18 5.79 14.58 5.79 14.83 6.04L15.63 6.84L17.21 5.25C17.46 5.01 17.86 5.01 18.11 5.25C18.36 5.5 18.36 5.9 18.11 6.15L16.07 8.18C15.95 8.31 15.79 8.37 15.63 8.37Z"
+                                    fill="#FFC91D" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path d="M15.37 6.58L14.83 6.04L14.83 6.04L15.37 6.58Z" fill="#377DE2"
+                                    fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M18.11 5.25C18.06 5.21 18.01 5.17 17.96 5.15C18.09 5.39 18.05 5.69 17.85 5.89L15.81 7.92C15.69 8.05 15.53 8.11 15.37 8.11C15.2 8.11 15.04 8.05 14.92 7.92L15.18 8.18C15.3 8.31 15.46 8.37 15.63 8.37C15.79 8.37 15.95 8.31 16.07 8.18L18.11 6.15C18.36 5.9 18.36 5.5 18.11 5.25Z"
+                                    fill="#FFA91A" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </g>
+                        </svg>
+                        Get Bonus
+                    </div>
+                    <div id="pay-bill"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5 px-3">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip11_2813">
+                                    <rect id="purse 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                        transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                                <linearGradient x1="12.356904" y1="2.145164" x2="12.229376" y2="5.884189"
+                                    id="paint_linear_11_2814_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFB92D" />
+                                    <stop offset="1.000000" stop-color="#F59500" />
+                                </linearGradient>
+                                <linearGradient x1="12.968354" y1="4.627777" x2="12.621076" y2="7.492187"
+                                    id="paint_linear_11_2815_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFB92D" />
+                                    <stop offset="1.000000" stop-color="#F59500" />
+                                </linearGradient>
+                                <linearGradient x1="11.867126" y1="4.712422" x2="11.867126" y2="6.894493"
+                                    id="paint_linear_11_2816_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A7F3CE" />
+                                    <stop offset="1.000000" stop-color="#61DB99" />
+                                </linearGradient>
+                                <linearGradient x1="11.999743" y1="8.489904" x2="11.999743" y2="14.613068"
+                                    id="paint_linear_11_2817_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4C54" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="11.999743" y1="13.036381" x2="11.999743" y2="22.493120"
+                                    id="paint_linear_11_2818_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4C54" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="21.678137" y1="14.970482" x2="20.084759" y2="14.970482"
+                                    id="paint_linear_11_2819_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BE3F45" stop-opacity="0.000000" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="7.427796" y1="13.334733" x2="15.533504" y2="17.073761"
+                                    id="paint_linear_11_2820_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFB92D" />
+                                    <stop offset="1.000000" stop-color="#F59500" />
+                                </linearGradient>
+                                <linearGradient x1="10.436091" y1="21.659845" x2="10.101039" y2="24.220732"
+                                    id="paint_linear_11_2821_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BE3F45" stop-opacity="0.000000" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="2.102601" y1="6.481281" x2="2.102601" y2="22.857876"
+                                    id="paint_linear_11_2822_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFF465" />
+                                    <stop offset="1.000000" stop-color="#FFE600" />
+                                </linearGradient>
+                                <linearGradient x1="11.516626" y1="6.481949" x2="11.516626" y2="22.824184"
+                                    id="paint_linear_11_2823_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFF465" />
+                                    <stop offset="1.000000" stop-color="#FFE600" />
+                                </linearGradient>
+                                <linearGradient x1="2.880748" y1="6.480887" x2="2.880748" y2="22.857021"
+                                    id="paint_linear_11_2824_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFF465" />
+                                    <stop offset="1.000000" stop-color="#FFE600" />
+                                </linearGradient>
+                                <linearGradient x1="19.102619" y1="18.292027" x2="14.253779" y2="13.443190"
+                                    id="paint_linear_11_2826_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#BE3F45" stop-opacity="0.000000" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="16.793047" y1="14.896301" x2="16.793047" y2="17.398365"
+                                    id="paint_linear_11_2827_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4C54" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="16.793055" y1="16.732002" x2="16.793055" y2="15.005451"
+                                    id="paint_linear_11_2828_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF4C54" />
+                                    <stop offset="1.000000" stop-color="#BE3F45" />
+                                </linearGradient>
+                                <linearGradient x1="13.997635" y1="5.186837" x2="14.491739" y2="7.368911"
+                                    id="paint_linear_11_2829_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A7F3CE" />
+                                    <stop offset="1.000000" stop-color="#61DB99" />
+                                </linearGradient>
+                                <linearGradient x1="14.904888" y1="5.186944" x2="15.398996" y2="7.369011"
+                                    id="paint_linear_11_2830_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A7F3CE" />
+                                    <stop offset="1.000000" stop-color="#61DB99" />
+                                </linearGradient>
+                                <linearGradient x1="13.802097" y1="5.231064" x2="14.296204" y2="7.413140"
+                                    id="paint_linear_11_2831_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A7F3CE" />
+                                    <stop offset="1.000000" stop-color="#61DB99" />
+                                </linearGradient>
+                                <linearGradient x1="14.709377" y1="5.231168" x2="15.203483" y2="7.413244"
+                                    id="paint_linear_11_2832_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A7F3CE" />
+                                    <stop offset="1.000000" stop-color="#61DB99" />
+                                </linearGradient>
+                            </defs>
+                            <rect id="purse 1" rx="-0.500000" width="23.000000" height="23.000000"
+                                transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip11_2813)">
+                                <path
+                                    d="M21.15 22L2.84 22C1.87 22 1.07 21.21 1.07 20.23L1.07 4.99C1.07 4.01 1.87 3.22 2.84 3.22L21.15 3.22C22.12 3.22 22.92 4.01 22.92 4.99L22.92 20.23C22.92 21.21 22.12 22 21.15 22Z"
+                                    fill="url(#paint_linear_11_2814_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M20.74 21.58L3.25 21.58C2.32 21.58 1.56 20.83 1.56 19.89L1.56 5.33C1.56 4.4 2.32 3.64 3.25 3.64L20.74 3.64C21.67 3.64 22.43 4.4 22.43 5.33L22.43 19.89C22.43 20.83 21.67 21.58 20.74 21.58Z"
+                                    fill="url(#paint_linear_11_2815_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path d="M21.73 8.15L17.33 0.53C17.03 0.02 16.39 -0.16 15.88 0.14L1.99 8.15L21.73 8.15Z"
+                                    fill="url(#paint_linear_11_2816_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M1.07 14.29L22.92 14.29L22.92 8.51C22.92 7.78 22.32 7.19 21.59 7.19L2.4 7.19C1.67 7.19 1.07 7.78 1.07 8.51L1.07 14.29Z"
+                                    fill="url(#paint_linear_11_2817_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M1.07 12.12L1.07 20.23C1.07 21.21 1.87 22 2.84 22L21.15 22C22.12 22 22.92 21.21 22.92 20.23L22.92 12.12C22.92 11.51 22.43 11.03 21.82 11.03L2.17 11.03C1.56 11.03 1.07 11.51 1.07 12.12Z"
+                                    fill="url(#paint_linear_11_2818_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M19.62 7.93L19.62 22L21.15 22C22.12 22 22.92 21.21 22.92 20.23L22.92 11.23L19.62 7.93Z"
+                                    fill="url(#paint_linear_11_2819_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M18.13 23.98L2.8 22.2C1.82 22.09 1.07 21.25 1.07 20.26L1.07 4.86C1.07 5.19 1.32 5.47 1.65 5.51L18.58 7.47C19.56 7.59 20.3 8.42 20.3 9.41L20.3 22.05C20.3 23.21 19.29 24.12 18.13 23.98Z"
+                                    fill="url(#paint_linear_11_2820_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M18.13 20.9L2.8 19.12C1.82 19.01 1.07 18.18 1.07 17.19L1.07 20.27C1.07 21.25 1.82 22.09 2.8 22.2L18.13 23.98C19.29 24.12 20.3 23.21 20.3 22.05L20.3 18.97C20.3 20.13 19.29 21.04 18.13 20.9Z"
+                                    fill="url(#paint_linear_11_2821_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M2.45 7.26C2.44 7.26 2.42 7.26 2.41 7.26L1.71 7.18C1.51 7.16 1.37 6.98 1.4 6.79C1.42 6.6 1.59 6.46 1.79 6.48L2.49 6.56C2.68 6.58 2.82 6.75 2.8 6.94C2.78 7.13 2.63 7.26 2.45 7.26Z"
+                                    fill="url(#paint_linear_11_2822_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M16.87 22.82C16.85 22.82 16.84 22.82 16.82 22.82L15.46 22.64C15.26 22.62 15.13 22.44 15.15 22.25C15.18 22.05 15.35 21.92 15.55 21.94L16.91 22.12C17.1 22.14 17.24 22.32 17.22 22.51C17.19 22.69 17.04 22.82 16.87 22.82ZM18.21 22.64C18.08 22.64 17.95 22.57 17.89 22.44C17.81 22.27 17.88 22.06 18.06 21.97C18.42 21.8 18.69 21.52 18.8 21.2C18.86 21.02 19.06 20.92 19.25 20.99C19.43 21.05 19.53 21.25 19.46 21.44C19.29 21.94 18.89 22.36 18.36 22.61C18.31 22.63 18.26 22.64 18.21 22.64ZM14.14 22.47C14.12 22.47 14.11 22.47 14.09 22.47L12.73 22.3C12.54 22.27 12.4 22.09 12.42 21.9C12.45 21.71 12.63 21.57 12.82 21.6L14.18 21.77C14.38 21.79 14.51 21.97 14.49 22.16C14.47 22.34 14.31 22.47 14.14 22.47ZM11.41 22.13C11.4 22.13 11.38 22.12 11.37 22.12L10 21.95C9.81 21.92 9.67 21.75 9.7 21.55C9.72 21.36 9.9 21.22 10.09 21.25L11.46 21.42C11.65 21.45 11.79 21.62 11.76 21.82C11.74 22 11.59 22.13 11.41 22.13ZM8.68 21.78C8.67 21.78 8.65 21.78 8.64 21.78L7.28 21.6C7.08 21.58 6.95 21.4 6.97 21.21C6.99 21.01 7.17 20.88 7.36 20.9L8.73 21.08C8.92 21.1 9.06 21.28 9.03 21.47C9.01 21.65 8.86 21.78 8.68 21.78ZM5.96 21.43C5.94 21.43 5.93 21.43 5.91 21.43L4.55 21.26C4.35 21.23 4.22 21.05 4.24 20.86C4.27 20.67 4.44 20.53 4.64 20.56L6 20.73C6.19 20.75 6.33 20.93 6.31 21.12C6.28 21.3 6.13 21.43 5.96 21.43ZM19.21 20.31C19.01 20.31 18.86 20.15 18.86 19.95L18.86 18.58C18.86 18.39 19.01 18.23 19.21 18.23C19.4 18.23 19.56 18.39 19.56 18.58L19.56 19.95C19.56 20.15 19.4 20.31 19.21 20.31ZM19.21 17.56C19.01 17.56 18.86 17.4 18.86 17.21L18.86 15.83C18.86 15.64 19.01 15.48 19.21 15.48C19.4 15.48 19.56 15.64 19.56 15.83L19.56 17.21C19.56 17.4 19.4 17.56 19.21 17.56ZM19.21 14.81C19.01 14.81 18.86 14.65 18.86 14.46L18.86 13.08C18.86 12.89 19.01 12.73 19.21 12.73C19.4 12.73 19.56 12.89 19.56 13.08L19.56 14.46C19.56 14.65 19.4 14.81 19.21 14.81ZM19.21 12.06C19.01 12.06 18.86 11.9 18.86 11.71L18.86 10.33C18.86 10.14 19.01 9.98 19.21 9.98C19.4 9.98 19.56 10.14 19.56 10.33L19.56 11.71C19.56 11.9 19.4 12.06 19.21 12.06ZM18.72 9.45C18.63 9.45 18.54 9.42 18.47 9.36C18.21 9.11 17.85 8.95 17.45 8.91L17.44 8.91C17.25 8.89 17.11 8.71 17.13 8.52C17.15 8.33 17.32 8.19 17.52 8.21L17.52 8.21C18.07 8.26 18.58 8.49 18.96 8.84C19.1 8.98 19.11 9.2 18.97 9.34C18.9 9.41 18.81 9.45 18.72 9.45ZM16.11 8.76C16.1 8.76 16.09 8.76 16.07 8.76L14.71 8.61C14.51 8.59 14.37 8.41 14.4 8.22C14.42 8.03 14.59 7.89 14.78 7.91L16.15 8.06C16.34 8.08 16.48 8.25 16.46 8.45C16.44 8.63 16.29 8.76 16.11 8.76ZM13.38 8.46C13.37 8.46 13.35 8.46 13.34 8.46L11.97 8.31C11.78 8.29 11.64 8.11 11.66 7.92C11.68 7.73 11.86 7.59 12.05 7.61L13.42 7.76C13.61 7.78 13.75 7.95 13.73 8.15C13.71 8.33 13.56 8.46 13.38 8.46ZM10.65 8.16C10.63 8.16 10.62 8.16 10.61 8.16L9.24 8.01C9.05 7.99 8.91 7.81 8.93 7.62C8.95 7.42 9.13 7.29 9.32 7.31L10.69 7.46C10.88 7.48 11.02 7.65 11 7.85C10.98 8.03 10.82 8.16 10.65 8.16ZM7.91 7.86C7.9 7.86 7.89 7.86 7.88 7.86L6.51 7.71C6.32 7.69 6.18 7.51 6.2 7.32C6.22 7.12 6.39 6.98 6.59 7.01L7.95 7.16C8.15 7.18 8.29 7.35 8.26 7.55C8.25 7.73 8.09 7.86 7.91 7.86ZM5.18 7.56C5.17 7.56 5.16 7.56 5.14 7.56L3.78 7.41C3.58 7.39 3.44 7.21 3.46 7.02C3.49 6.82 3.66 6.68 3.85 6.71L5.22 6.86C5.41 6.88 5.55 7.05 5.53 7.25C5.51 7.43 5.36 7.56 5.18 7.56Z"
+                                    fill="url(#paint_linear_11_2823_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M3.23 21.08C3.21 21.08 3.2 21.08 3.18 21.08L2.48 20.99C2.29 20.97 2.15 20.79 2.18 20.6C2.2 20.4 2.38 20.27 2.57 20.29L3.27 20.38C3.46 20.41 3.6 20.58 3.58 20.78C3.55 20.95 3.4 21.08 3.23 21.08Z"
+                                    fill="url(#paint_linear_11_2824_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M16.19 2.62L13.93 3.85C13.64 4.01 13.27 3.9 13.11 3.61C12.95 3.32 13.06 2.95 13.35 2.79L15.61 1.56C15.91 1.4 16.28 1.51 16.44 1.8C16.6 2.09 16.49 2.46 16.19 2.62Z"
+                                    fill="#61DB99" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M20.3 17.05L18.06 14.81C17.75 14.46 17.29 14.25 16.79 14.25C15.83 14.25 15.06 15.02 15.06 15.98C15.06 16.48 15.27 16.94 15.62 17.25L20.3 21.94L20.3 17.05L20.3 17.05Z"
+                                    fill="url(#paint_linear_11_2826_0)" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <path
+                                    d="M18.52 15.98C18.52 16.93 17.74 17.71 16.79 17.71C15.83 17.71 15.06 16.93 15.06 15.98C15.06 15.02 15.83 14.25 16.79 14.25C17.74 14.25 18.52 15.02 18.52 15.98Z"
+                                    fill="url(#paint_linear_11_2827_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M17.98 15.98C17.98 16.64 17.45 17.17 16.79 17.17C16.13 17.17 15.59 16.64 15.59 15.98C15.59 15.32 16.13 14.78 16.79 14.78C17.45 14.78 17.98 15.32 17.98 15.98Z"
+                                    fill="url(#paint_linear_11_2828_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M16.58 15.52C16.58 15.66 16.47 15.77 16.33 15.77C16.2 15.77 16.09 15.66 16.09 15.52C16.09 15.39 16.2 15.28 16.33 15.28C16.47 15.28 16.58 15.39 16.58 15.52Z"
+                                    fill="url(#paint_linear_11_2829_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M17.49 15.52C17.49 15.66 17.38 15.77 17.24 15.77C17.11 15.77 17 15.66 17 15.52C17 15.39 17.11 15.28 17.24 15.28C17.38 15.28 17.49 15.39 17.49 15.52Z"
+                                    fill="url(#paint_linear_11_2830_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M16.58 16.43C16.58 16.57 16.47 16.68 16.33 16.68C16.2 16.68 16.09 16.57 16.09 16.43C16.09 16.29 16.2 16.18 16.33 16.18C16.47 16.18 16.58 16.29 16.58 16.43Z"
+                                    fill="url(#paint_linear_11_2831_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                                <path
+                                    d="M17.49 16.43C17.49 16.57 17.38 16.68 17.24 16.68C17.11 16.68 17 16.57 17 16.43C17 16.29 17.11 16.18 17.24 16.18C17.38 16.18 17.49 16.29 17.49 16.43Z"
+                                    fill="url(#paint_linear_11_2832_0)" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </g>
+                        </svg>
+                        Pay Bill
+                    </div>
+                    <div id="transaction"
+                        class="border text-sm flex flex-col justify-center items-center rounded-xl py-5 px-3">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.05 23.81L21.58 19.61C21.89 19.33 21.89 18.86 21.58 18.58L17.05 14.38C16.59 13.97 15.86 14.29 15.86 14.9L15.86 16.69L9.07 16.69C8.75 16.69 8.49 16.95 8.49 17.27L8.49 20.92C8.49 21.24 8.75 21.5 9.07 21.5L15.86 21.5L15.86 23.29C15.86 23.9 16.59 24.22 17.05 23.81Z"
+                                fill="#48ACFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M21.58 19.61L17.05 23.81C16.59 24.22 15.86 23.9 15.86 23.29L15.86 22.39C18.03 22.05 19.68 20.18 19.68 17.91C19.68 17.48 19.62 17.06 19.51 16.66L21.58 18.58C21.89 18.86 21.89 19.33 21.58 19.61Z"
+                                fill="#229BFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M21.58 19.61L21.33 19.85L8.49 19.85L8.49 17.27C8.49 16.95 8.75 16.69 9.07 16.69L15.86 16.69L15.86 14.9C15.86 14.29 16.59 13.97 17.05 14.38L21.58 18.58C21.89 18.86 21.89 19.33 21.58 19.61Z"
+                                fill="#229BFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M6.94 9.61L2.41 5.41C2.1 5.13 2.1 4.66 2.41 4.38L6.94 0.18C7.4 -0.23 8.13 0.09 8.13 0.7L8.13 2.49L14.92 2.49C15.24 2.49 15.5 2.75 15.5 3.07L15.5 6.72C15.5 7.04 15.24 7.3 14.92 7.3L8.13 7.3L8.13 9.09C8.13 9.7 7.4 10.02 6.94 9.61Z"
+                                fill="#FF4881" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M15.5 5.05L15.5 3.07C15.5 2.75 15.24 2.49 14.92 2.49L14.52 2.49C14.52 3.43 13.77 4.7 12.13 5.05L15.5 5.05Z"
+                                fill="#FE255F" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M12.17 2.49L8.08 2.49C7.63 2.49 7.26 2.86 7.26 3.31C7.26 3.77 7.63 4.14 8.08 4.14L12.17 4.14C12.63 4.14 13 3.77 13 3.31C13 2.86 12.63 2.49 12.17 2.49Z"
+                                fill="#FC709B" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M10.36 2.49L9.53 2.49C9.08 2.49 8.71 2.86 8.71 3.31C8.71 3.77 9.08 4.14 9.53 4.14L10.36 4.14C10.82 4.14 11.19 3.77 11.19 3.31C11.19 2.86 10.82 2.49 10.36 2.49Z"
+                                fill="#F7A6C1" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M22.59 18.94L1.4 18.94C0.62 18.94 0 18.31 0 17.53L0 6.46C0 5.68 0.62 5.05 1.4 5.05L22.59 5.05C23.37 5.05 24 5.68 24 6.46L24 17.53C24 18.31 23.37 18.94 22.59 18.94Z"
+                                fill="#29E088" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M24 6.46L24 17.53C24 18.31 23.37 18.94 22.59 18.94L11.13 18.94C16.6 17.95 20.74 13.17 20.74 7.42C20.74 6.61 20.66 5.82 20.5 5.05L22.59 5.05C23.37 5.05 24 5.68 24 6.46Z"
+                                fill="#0CC166" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M23.99 13.72L23.99 17.53C23.99 18.31 23.37 18.94 22.59 18.94L17.14 18.94C20.17 18.39 22.7 16.41 23.99 13.72Z"
+                                fill="#04A550" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M22.35 7.16L22.35 16.36C22.35 16.88 21.93 17.3 21.42 17.3L2.1 17.3C1.85 17.3 1.64 17.09 1.64 16.83L1.64 7.63C1.64 7.11 2.06 6.69 2.57 6.69L21.89 6.69C22.14 6.69 22.35 6.9 22.35 7.16Z"
+                                fill="#0CC166" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M22.35 7.16L22.35 16.36C22.35 16.88 21.93 17.3 21.42 17.3L15.32 17.3C18.58 15.22 20.74 11.58 20.74 7.42C20.74 7.18 20.73 6.93 20.72 6.69L21.89 6.69C22.14 6.69 22.35 6.9 22.35 7.16Z"
+                                fill="#04A550" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path
+                                d="M16.07 12C16.07 14.52 14.25 16.57 12 16.57C9.74 16.57 7.92 14.52 7.92 12C7.92 9.47 9.74 7.42 12 7.42C14.25 7.42 16.07 9.47 16.07 12Z"
+                                fill="#04A550" fill-opacity="1.000000" fill-rule="evenodd" />
+                            <path
+                                d="M16.07 12C16.07 14.52 14.25 16.57 12 16.57C10.65 16.57 9.46 15.84 8.72 14.72C9.27 14.96 9.87 15.09 10.5 15.09C12.99 15.09 15 13.07 15 10.59C15 9.74 14.76 8.94 14.35 8.26C15.39 9.09 16.07 10.45 16.07 12Z"
+                                fill="#00893E" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                        Transactions
+                    </div>
+                </div>
+            </div>
+
+            <div id="default-section" class="space-y-4 mx-6 mt-7">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold">Latest Payments</h2>
+                    <button class="btn">View All</button>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Electricity Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Electricity Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Electricity Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Electricity Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="add-money-section" class="hidden space-y-4 mx-6 mt-7">
+                <h2 class="text-xl font-bold">Add Money</h2>
+                <div class="bg-slate-200 rounded-xl">
+                    <form class="py-0 card-body">
+                        <div class="form-control">
+                            <label class="label  pb-0">
+                                <span class="label-text font-semibold text-lg">Select A Bank</span>
+                            </label>
+                            <select class="select select-bordered w-full">
+                                <option selected>Dach Bangla Bank</option>
+                                <option>Islami Bank</option>
+                                <option>IFIC Bank</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Bank Account Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter 11 digit account number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Amount to Add</span>
+                            </label>
+                            <input id="added" type="number" placeholder="Add Amount to withdraw"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Pin Number</span>
+                            </label>
+                            <input id="pin-add" type="number" placeholder="Enter 4 Digit Pin Number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control my-3">
+                            <button id="add-money-btn" class="btn btn-primary font-bold">Add Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="cash-out-section" class="hidden space-y-4 mx-6 mt-7">
+                <h2 class="text-xl font-bold">Cash Out</h2>
+                <div class="bg-slate-200 rounded-xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Agent Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter 11 digit number" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Amount</span>
+                            </label>
+                            <input id="withdraw" type="number" placeholder="Enter amount to withdraw"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Pin Number</span>
+                            </label>
+                            <input id="pin-out" type="number" placeholder="Enter 4 Digit Pin Number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-5">
+                            <button id="cash-out-btn" class="btn btn-primary font-bold">Withdraw Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="transfer-section" class="hidden space-y-4 mx-6 mt-7">
+                <h2 class="text-xl font-bold">Transfer Money</h2>
+                <div class="bg-slate-200 rounded-xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">User Account Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter 11 digit number" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Amount</span>
+                            </label>
+                            <input id="transfer" type="number" placeholder="Enter amount to transfer"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Pin Number</span>
+                            </label>
+                            <input id="pin-transfer" type="number" placeholder="Enter 4 Digit Pin Number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-5">
+                            <button id="transfer-btn" class="btn btn-primary font-bold">Send Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="get-bonus-section" class="hidden space-y-4 mx-6 mt-7">
+                <h2 class="text-xl font-bold">Get Bonus</h2>
+                <div class="bg-slate-200 rounded-xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-lg font-semibold">Get Bonus Coupon</span>
+                            </label>
+                            <input id="coupon" type="text" placeholder="Enter your coupon" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control mt-5">
+                            <button id="bonus-btn" class="btn btn-primary font-bold">Get Bonus</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="pay-bill-section" class="hidden space-y-4 mx-6 mt-7">
+                <h2 class="text-xl font-bold">Pay Bill</h2>
+                <div class="bg-slate-200 rounded-xl">
+                    <form class="py-0 card-body">
+                        <div class="form-control">
+                            <label class="label pb-0">
+                                <span class="label-text font-semibold text-lg">Select To Pay</span>
+                            </label>
+                            <select class="select select-bordered w-full">
+                                <option selected>Biddut Bill</option>
+                                <option>Water bill</option>
+                                <option>Gas Bill</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Biller Account Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter account number" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Amount to Pay</span>
+                            </label>
+                            <input id="added-pay" type="number" placeholder="Add Amount to Pay"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label py-0">
+                                <span class="label-text text-lg font-semibold">Pin Number</span>
+                            </label>
+                            <input id="pin-pay" type="number" placeholder="Enter 4 Digit Pin Number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control my-3">
+                            <button id="pay-btn" class="btn btn-primary font-bold">Pay Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="transaction-section" class="hidden space-y-4 mx-6 mt-7">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold">Transaction History</h2>
+                    <button id="transaction-btn" class="btn">View All</button>
+                </div>
+                <div id="cards" class="hidden space-y-3">
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Electricity Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Bank Deposit</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Mobile Recharge</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex border-4 px-4 py-3 rounded-xl bg-slate-200 items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <button class="btn btn-circle">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                            </button>
+                            <div>
+                                <h2 class="font-semibold">Gas Bill</h2>
+                                <p class="text-xs">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 rotate-90 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <!-- <div class="dropdown dropdown-left dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost rounded-btn">View All</div>
+        <ul tabindex="0" class="menu dropdown-content bg-base-200 rounded-box z-[1] mt-4 w-92 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-5 w-5 rotate-90 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div>
+                        <h2 class="font-semibold text-lg">Electricity Bill</h2>
+                        <p class="text-sm">Today 01:44 AM</p>
+                    </div>
+                </div>
+                <button class="btn btn-square btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 rotate-90 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </ul>
+    </div> -->
+
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
+</body>
+
+</html>
